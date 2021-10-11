@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>loan</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="loanstyle.css" type="text/css">
+<script type="text/javascript">
+    function calculate() {
+        var loan=document.getElementById('loan').value;
+        var interest_rate=document.getElementById('interest_rate').value;
+        var months=document.getElementById('months').value;
+        var interest=(loan*(interest_rate*.01))/months;
+        var Payment=((loan/months)+interest).toFixed(2);
+        Payment=Payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        document.getElementById('payment').innerHTML="Monthly payment= N" +payment;
+    }
+
+</script>
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMzPHIAZudwbVTn24nrXXsJ7fvQ4aPLEpL8A&usqp=CAU">
+    <center>
+        <form>
+            <h1>LOAN CALCULATOR</h1>
+            <br>Amount loaned</br>
+            <p><input type="number" id="loan" min="1" max="1000000" placeholder="Rupees" onchange="calculate()"></p>
+            <p><br>Interest Rate (%)</br>
+            <p><input type="number" id="interest_rate" min="0" max="100" value="2" step=".1" onchange="calculate()"></p>
+            <br>months:</br>
+            <p><input type="number" id="months" min="1" max="72" value="1" step="1" onchange="calculate()"></p>
+
+        </form>
+        <h2 id="Payment"></h2>
+    <marquee>
+        <strong>Hello..Get your loan, Utilize it well and payback with little interest.</strong>
+    </marquee>
+        
+    </center>
+
+</body>
+</html>

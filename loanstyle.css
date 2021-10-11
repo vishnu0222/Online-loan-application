@@ -1,0 +1,44 @@
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+form input {
+    background: #ffff97;
+    margin-bottom: 10px;
+    padding: 5px 5px 10px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+center form {
+    background: rgba(0,0,0,0.9);
+    color: #868686;
+    margin: 20px 20px 2px 20px;
+    border-radius: 20px;
+    font-family: Elephant;
+    font-size: 20px;
+}
+center h2 {
+    margin: 0px;
+    background: #ffff97;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 25px;
+}
+form h1 h2 {
+    margin: 0px;
+}
+form p{
+    margin: 0px;
+}
+form br{
+    margin: 0px;
+}
+center marquee {
+    font-family: Agency fb;
+    background: white;
+    font-size: 25px;
+    margin: 0px;
+    padding: 14px;
+    height: 20px;
+}
